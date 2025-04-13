@@ -20,8 +20,17 @@ organizing the application's UI.
 - **Clerk**: The template uses Clerk for authentication. To use Clerk, you need to create a Clerk account and obtain
   your Clerk ID.
 
+signin and signup page
+
 ![pic](docs/signin.jpg)
+
 ![pic](docs/signup.jpg)
+
+dark and light mode
+
+![pic](docs/dark.jpg)
+
+![pic](docs/light.jpg)
 
 ## <span id="installation">Installation</span>
 
