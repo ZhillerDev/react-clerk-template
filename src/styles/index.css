@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+/* 全局滚动条样式定制 */
+/* Webkit内核浏览器 */
+::-webkit-scrollbar {
+  width: 12px;  /* 垂直滚动条宽度 */
+  height: 12px; /* 水平滚动条高度 */
+  background-color: #f5f5f5; /* 滚动条背景色 */
+}
+
+/* 隐藏滚动条箭头 */
+::-webkit-scrollbar-button {
+  display: none !important;  /* 完全隐藏箭头  */
+}
+
+/* 轨道样式 */
+::-webkit-scrollbar-track {
+  background: #f5f5f5; /* 淡灰色轨道 */
+  border-radius: 6px;
+}
+
+/* 滑块样式 */
+::-webkit-scrollbar-thumb {
+  background: #e0e0e0; /* 浅灰色滑块 */
+  border-radius: 6px;
+  border: 3px solid #f5f5f5; /* 轨道留白间隔 */
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bdbdbd; /* 悬停加深 */
+}
+
+/* Firefox浏览器支持 */
+@supports (scrollbar-color: auto) {
+  * {
+    scrollbar-width: thin; /* 细滚动条模式  */
+    scrollbar-color: #e0e0e0 #f5f5f5; /* 滑块颜色 轨道颜色 */
+  }
+}
